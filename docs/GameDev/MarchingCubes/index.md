@@ -5,7 +5,7 @@
 - [https://developer.nvidia.com/gpugems/gpugems3/part-i-geometry/chapter-1-generating-complex-procedural-terrains-using-gpu](https://developer.nvidia.com/gpugems/gpugems3/part-i-geometry/chapter-1-generating-complex-procedural-terrains-using-gpu)
 
 ## 3D perlin noise
-- https://gist.githubusercontent.com/tntmeijs/6a3b4587ff7d38a6fa63e13f9d0ac46d/raw/f0133f4c794399641564da6c722faee445153206/unitythreedimensionalperlinnoise.cs
+- [https://gist.githubusercontent.com/tntmeijs/6a3b4587ff7d38a6fa63e13f9d0ac46d/raw/f0133f4c794399641564da6c722faee445153206/unitythreedimensionalperlinnoise.cs](https://gist.githubusercontent.com/tntmeijs/6a3b4587ff7d38a6fa63e13f9d0ac46d/raw/f0133f4c794399641564da6c722faee445153206/unitythreedimensionalperlinnoise.cs)
 ```c#
 private static float Noise3D(float x, 
                              float y, 
