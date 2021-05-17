@@ -1,5 +1,6 @@
 ## Table of Content
 - Game development
-    - [Marching cubes](https://danielchen09.github.io/GameDev/MarchingCubes)
-    - [ComputeShaders](https://danielchen09.github.io/GameDev/ComputeShaders)
+    - [Marching cubes](/GameDev/MarchingCubes)
+    - [ComputeShaders](/GameDev/ComputeShaders)
+    - [GeneralResources](/GameDev/GeneralResources.md)
 
