@@ -1,7 +1,7 @@
 # Miscellaneous
 ## Table of Contents
-- [Gizmos](##Gizmos)
-- [Custom Inspector](##Custom-Inspector)
+- [Gizmos](#Gizmos)
+- [Custom Inspector](#Custom-Inspector)
 
 ## Gizmos
 ### Basics
