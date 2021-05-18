@@ -1,7 +1,7 @@
 # First Person Controller
 ## Sources
-- (https://www.youtube.com/watch?v=_QajrabyTJc)[https://www.youtube.com/watch?v=_QajrabyTJc]
-- (https://www.youtube.com/watch?v=7KiK0Aqtmzc)[https://www.youtube.com/watch?v=7KiK0Aqtmzc]
+- [https://www.youtube.com/watch?v=_QajrabyTJc](https://www.youtube.com/watch?v=_QajrabyTJc)
+- [https://www.youtube.com/watch?v=7KiK0Aqtmzc](https://www.youtube.com/watch?v=7KiK0Aqtmzc)
 
 ## Set up
 - Player {Character Controller, Movement Script}

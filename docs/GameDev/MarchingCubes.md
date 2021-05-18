@@ -51,7 +51,7 @@ private static float Noise3D(float x,
     return noise / octave;
 }
 ```
-- (https://gist.githubusercontent.com/jstanden/1489447/raw/d84374044aa0f75d0f144904fcbe76b5927e988f/gistfile1.cs)[https://gist.githubusercontent.com/jstanden/1489447/raw/d84374044aa0f75d0f144904fcbe76b5927e988f/gistfile1.cs]
+- [https://gist.githubusercontent.com/jstanden/1489447/raw/d84374044aa0f75d0f144904fcbe76b5927e988f/gistfile1.cs](https://gist.githubusercontent.com/jstanden/1489447/raw/d84374044aa0f75d0f144904fcbe76b5927e988f/gistfile1.cs)
 
 ## Mesh Generation
 - A mesh is composed of triangles, stored as a 1-D array
