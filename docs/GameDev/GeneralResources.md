@@ -16,9 +16,11 @@
     #endif
     ```
     - Or put the code into an Editor folder
+- API: (https://docs.unity3d.com/ScriptReference/Gizmos.html)[https://docs.unity3d.com/ScriptReference/Gizmos.html]
 
 ## Custom Inspector
-- https://www.youtube.com/watch?v=RInUu1_8aGw
+- (https://www.youtube.com/watch?v=RInUu1_8aGw)[https://www.youtube.com/watch?v=RInUu1_8aGw]
+
 ### Basics
 - Extends `Editor`
 - Apply to a class using the attribute
