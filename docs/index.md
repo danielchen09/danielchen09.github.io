@@ -1,6 +1,7 @@
 ## Table of Content
 - Game development
-    - [Marching cubes](/GameDev/MarchingCubes.md)
-    - [ComputeShaders](/GameDev/ComputeShaders.md)
-    - [GeneralResources](/GameDev/GeneralResources.md)
+    - [Marching Cubes](/GameDev/MarchingCubes.md)
+    - [Compute Shaders](/GameDev/ComputeShaders.md)
+    - [First Person Controller](/GameDev/FirstPersonController.md)
+    - [General Resources](/GameDev/GeneralResources.md)
 
