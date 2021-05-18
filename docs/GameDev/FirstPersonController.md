@@ -81,6 +81,7 @@ public class MoveController : MonoBehaviour {
 
 ## Better Jumping
 - Add before applying gravity
+
 ```c#
 if (velocity.y < 0) {
     // is falling

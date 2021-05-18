@@ -60,6 +60,7 @@ private static float Noise3D(float x,
     - MeshFilter component: stores mesh information
     - MeshRenderer component: renders the mesh
 - To generate a mesh:
+
 ```c#
 Mesh mesh = new Mesh();
 Vector3[] vertices;
