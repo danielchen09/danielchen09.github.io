@@ -1,12 +1,14 @@
 # First Person Controller
 ## Sources
 - (https://www.youtube.com/watch?v=_QajrabyTJc)[https://www.youtube.com/watch?v=_QajrabyTJc]
+- (https://www.youtube.com/watch?v=7KiK0Aqtmzc)[https://www.youtube.com/watch?v=7KiK0Aqtmzc]
 
 ## Set up
 - Player {Character Controller, Movement Script}
     - Model
     - Main Camera {Look Script}
     - Ground Check
+- Set ground layer and ground check of movement script
 
 ## Camera Script
 ```c#
@@ -34,16 +36,18 @@ public class LookController : MonoBehaviour {
 
 ## Movement Script
 ```c#
-public class MoveController : MonoBehaviour
-{
+public class MoveController : MonoBehaviour {
     private CharacterController controller;
     public Transform groundCheck;
     private Vector3 move;
     private Vector3 velocity;
-    private bool isGrounded;
+    public bool isGrounded;
 
     public float speed = 6f;
-    public float gravity = 2f;
+    public float jumpSpeed = 5f;
+    public float fallMultiplier = 2.5f;
+    public float lowJumpMultiplier = 2f;
+    public float gravity = -2f;
     public float groundDistance = .1f;
     public LayerMask groundMask;
 
@@ -64,7 +68,7 @@ public class MoveController : MonoBehaviour
             velocity.y = -2f;
 
         if (Input.GetButtonDown("Jump") && isGrounded) {
-            // handle jumping
+            velocity.y = jumpSpeed;
         }
 
         velocity.y += gravity * Time.deltaTime;
@@ -73,4 +77,17 @@ public class MoveController : MonoBehaviour
         controller.Move(move * speed * Time.deltaTime);
     }
 }
+```
+
+## Better Jumping
+- Add before applying gravity
+```c#
+if (velocity.y < 0) {
+    // is falling
+    velocity += Vector3.up * gravity * fallMultiplier * Time.deltaTime;
+} else if (velocity.y > 0 && !Input.GetButton("Jump")) {
+    // is still going up, but not holding jump button, fall faster
+    velocity += Vector3.up * gravity * lowJumpMultiplier * Time.deltaTime;
+}
+// otherwise fall fall normally
 ```
