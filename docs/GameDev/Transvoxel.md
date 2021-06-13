@@ -24,4 +24,11 @@ foreach corners with index i
     - For example, if a vertex is to be created on the edge with edge code 62 (0110 0010), then it should share the vertex located on edge 2 of the cell with offset (x = 0, y = -1, z = -1)
     - In the `regularVertexData` table, the edge code is appended with another byte containing information on the edge. For example, `0x2315` represent the edge with edge code `0x23`, connecting from corner `1` to corner `5`
 - If a cell is located on the boundary, then the above restriction no longer applies and a new vertex can be created on an edge that does not have an edge code that starts with 8
-- To generate a new vertex on an edge
+- To generate a new vertex on an edge, interpolate between the two corners connecting the edge using this equation<br>
+![3.5](http://www.sciweavers.org/tex2img.php?eq=Q%3DP_1%2Bt%28P_0-P_1%29&bc=White&fc=Black&im=jpg&fs=12&ff=fourier&edit=0),<br>
+where<br>
+![3.4](http://www.sciweavers.org/tex2img.php?eq=t%3D%5Cfrac%7Bd_1%7D%7Bd_1-d_0%7D&bc=White&fc=Black&im=jpg&fs=12&ff=fourier&edit=0)
+    - P<sub>0</sub>: Position of the corner with a lower index
+    - P<sub>1</sub>: Position of the corner with a higher index
+    - d<sub>0</sub>: Voxel value of the corner with a lower index
+    - d<sub>1</sub>: Voxel value of the corner with a higher index
