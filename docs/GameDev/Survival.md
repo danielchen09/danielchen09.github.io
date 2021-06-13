@@ -1,6 +1,6 @@
 # Log of survival game
 ## 6/12/2021
-![0612202101](https://imgur.com/4WU9kFC)
+![0612202101](https://imgur.com/gallery/4WU9kFC)
 ### What worked
 - Terrain generation using marching cubes
 - Chunk loading and off loading
