@@ -13,3 +13,17 @@
 - Chunk generation is slow, with render distance of 7 (7 in each octant), chunk generation in one frame could take up to ~134ms (most of the time are spent baking colliders)
 - Terrain deforming speed is not consistent
 - Vertex colors unnatural when transitioning to another material
+
+## 6/25/2021
+![img](Images/2021062501.png)
+
+### What worked
+- Biomes
+- Generation of entities like trees and cactuses
+
+### Problems
+![img](Images/2021062502.png)
+- trees can sometimes spawn underground. This is caused by a volume being cut off horizontally by a chunk border, so the ray cast is able to hit what is below the surface
+
+![img](Images/2021062503.png)
+- Biome generation can be improved. Snow biome can generate in the middle of a desert.

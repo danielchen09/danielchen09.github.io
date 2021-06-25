@@ -1,4 +1,4 @@
-# Transvoxel
+# Transvoxel (WIP)
 The Transvoxel Algorithm is a method for seamlessly stitching together neighboring triangle meshes generated from voxel data at differing resolutions so that level of detail (LOD) can be used with large voxel-based datasets such as volumetric terrain in next-generation video games. ([transvoxel.org](transvoxel.org))
 
 ## The problem
@@ -32,3 +32,11 @@ where<br>
     - P<sub>1</sub>: Position of the corner with a higher index
     - d<sub>0</sub>: Voxel value of the corner with a lower index
     - d<sub>1</sub>: Voxel value of the corner with a higher index
+    - If t = 0, then the vertex is positioned on a corner
+
+## Implementation of the modified marching cubes
+```
+
+```
+
+## Level of Detail
